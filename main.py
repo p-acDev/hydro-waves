@@ -70,6 +70,7 @@ elif mode == "batch":
         df_tp = pd.DataFrame(columns=fetchs, index=speeds, data=tps)
 
         st.success("Matrices generated")
+        st.balloons()
 
         st.download_button("Download hs matrix as csv",
         data=df_hs.to_csv(),
