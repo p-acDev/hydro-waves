@@ -42,13 +42,13 @@ elif mode == "batch":
     with col1:
         st.markdown("##### Wind speed (3s) at 10 m [m/s]")
         windSpeed_start = st.number_input('start range', 0)
-        windSpeed_end = st.number_input('end range', 70)
-        wind_step = st.number_input('step', 5)
+        windSpeed_end = st.number_input('end range', 5)
+        wind_step = st.number_input('step', 1)
     with col2:
         st.markdown("##### Fetch [m]")
         fetch_start = st.number_input('start range', 5)
         fetch_end = st.number_input('end range', 100)
-        fetch_step = st.number_input('step', 10)
+        fetch_step = st.number_input('step', 5)
 
     speeds = np.arange(windSpeed_start, windSpeed_end, wind_step)
     fetchs = np.arange(fetch_start, fetch_end, fetch_step)
