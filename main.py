@@ -6,7 +6,7 @@ from itertools import product
 from PIL import Image
 
 st.write("# Wave calculations")
-image = Image.open('./wave.png')
+image = Image.open('./wave.jpg')
 
 st.info("Report a bug ? pacdev@gmail.com")
 col1, col2, col3 = st.columns(3)
