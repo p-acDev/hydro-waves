@@ -21,9 +21,9 @@ if mode == "single":
         depth = st.number_input('Water depth [m]', 20.0)
     col1, col2 = st.columns(2)
     with col1:
-        windSpeed = st.number_input('Wind speed (3s) at 10 m [m/s]', 30.0)
+        windSpeed = st.number_input('Wind speed (3s) at 10 m [m/s]', 5.0)
     with col2:
-        fetch = st.number_input('Fetch [m]', 100.0)
+        fetch = st.number_input('Fetch [m]', 10.0)
 
     u_tmin, tmin, hs, tp, lp = sea(windSpeed, fetch, depth)
 
